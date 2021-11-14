@@ -89,7 +89,7 @@ const Testimonials = () => {
         <
         Card text = ""
         name = "Adarsh Sharma "
-        image = "avatar-2(2)" /
+        image = "avatar-2" /
         >
 
 
