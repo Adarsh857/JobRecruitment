@@ -10,8 +10,7 @@ import Capsule from "../../assets/3dcapsule.png";
 import TextBlock from "../../components/TextBlock";
 import SvgBlock from "../../components/SvgBlock";
 
-// const TextBlock = lazy(() => import("../../components/TextBlock"));
-// const SvgBlock = lazy(() => import("../../components/SvgBlock"));
+
 
 const ServiceSection = styled.section`
   width: 100vw;
@@ -123,7 +122,7 @@ const Services = () => {
 
   useEffect(() => {
     const element = ref.current;
-    ////
+   
     const mq = window.matchMedia("(max-width: 48em)");
     const t1 = gsap.timeline({
       scrollTrigger: {
@@ -156,7 +155,7 @@ const Services = () => {
     );
 
     revealRefs.current.forEach((el, index) => {
-      // console.log(el.childNodes);
+
       if (mq.matches) {
         t1.from(
           el.childNodes[0],
@@ -174,8 +173,7 @@ const Services = () => {
               end: "bottom bottom-=100",
               scrub: true,
               snap: true,
-              //
-              // toggleActions: "play none none reverse",
+             
             },
           }
         )
@@ -192,7 +190,6 @@ const Services = () => {
               scrub: true,
               snap: true,
 
-              // toggleActions: "play none none reverse",
             },
           })
           .from(
@@ -211,8 +208,7 @@ const Services = () => {
                 end: "bottom bottom-=200",
                 scrub: true,
                 snap: true,
-                //
-                // toggleActions: "play none none reverse",
+               
               },
             }
           )
@@ -249,8 +245,7 @@ const Services = () => {
               end: "bottom bottom-=200",
               scrub: true,
               snap: true,
-              //
-              // toggleActions: "play none none reverse",
+           
             },
           }
         )
@@ -267,7 +262,6 @@ const Services = () => {
               scrub: true,
               snap: true,
 
-              // toggleActions: "play none none reverse",
             },
           })
           .from(
@@ -286,8 +280,7 @@ const Services = () => {
                 end: "bottom bottom-=200",
                 scrub: true,
                 snap: true,
-                //
-                // toggleActions: "play none none reverse",
+           
               },
             }
           )
@@ -327,10 +320,10 @@ const Services = () => {
       <Content ref={addToRefs}>
         <TextBlock
           topic="Design"
-          title={<h1>We build award winning Designs</h1>}
+          title={<h1>We Recruit Students</h1>}
           subText={
             <h5>
-              We help clients to build great design to attract more customers
+              We help Students have choose a paticular domain in their field.
             </h5>
           }
         />
@@ -342,11 +335,10 @@ const Services = () => {
       <Content ref={addToRefs}>
         <TextBlock
           topic="Develop"
-          title={<h1>We Develope high quality Web & App</h1>}
+          title={<h1>We hire Interns</h1>}
           subText={
             <h5>
-              We build appropriate solution to develope your website & app with
-              best tools available
+            Give them a chance to explore their skills .
             </h5>
           }
         />
@@ -358,12 +350,12 @@ const Services = () => {
       <Content>
         <TextBlock
           topic="Support"
-          title={<h1>We provide support for your digital presence</h1>}
+          title={<h1>We provide support to students in the field which they want to go.</h1>}
           subText={
             <h5>
-              Once your system is online, we will stay on hand to help you use
-              it and provide technical support and maintenance <br /> your
-              business
+              Once students are with us we provide them a career pathway guidence with the intenship.
+             <br /> So that they can excel in their fields.
+
             </h5>
           }
         />

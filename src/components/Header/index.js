@@ -235,39 +235,39 @@ const Header = () => {
     <Headers ref={ref}>
       <Logo>
         <img src={logo} alt="CodeBucks" />
-        <h3>CodeBucks</h3>
-      </Logo>
+        <h3> Recruiters</h3>{" "}
+      </Logo>{" "}
       <Nav>
         <a href="#home" onClick={(e) => scrollUp("home", e)}>
-          Home
-        </a>
+          Home{" "}
+        </a>{" "}
         <a href="#about" onClick={(e) => scrollUp("about", e)}>
-          About Us
-        </a>
+          About Us{" "}
+        </a>{" "}
         <a href="#services" onClick={(e) => scrollUp("services", e)}>
-          Services
-        </a>
+          Jobs{" "}
+        </a>{" "}
         <a href="#contact" onClick={(e) => scrollUp("contact", e)}>
-          <Button>Contact Us</Button>
-        </a>
-      </Nav>
+          <Button> Contact Us </Button>{" "}
+        </a>{" "}
+      </Nav>{" "}
       <HamburgerBtn clicked={click} onClick={() => setClick(!click)}>
-        <span></span>
-      </HamburgerBtn>
+        <span> </span>{" "}
+      </HamburgerBtn>{" "}
       <MobileMenu clicked={click}>
         <a href="#home" onClick={(e) => handleClick("home", e)}>
-          Home
-        </a>
+          Home{" "}
+        </a>{" "}
         <a href="#about" onClick={(e) => handleClick("about", e)}>
-          About Us
-        </a>
+          About Us{" "}
+        </a>{" "}
         <a href="#services" onClick={(e) => handleClick("services", e)}>
-          Services
-        </a>
+          Jobs{" "}
+        </a>{" "}
         <a href="#contact" onClick={(e) => handleClick("contact", e)}>
-          <Button>Contact Us</Button>
-        </a>
-      </MobileMenu>
+          <Button> Contact Us </Button>{" "}
+        </a>{" "}
+      </MobileMenu>{" "}
     </Headers>
   );
 };
