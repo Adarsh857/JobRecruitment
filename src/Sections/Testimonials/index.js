@@ -5,9 +5,10 @@ import Slider from "react-slick";
 import "../../../node_modules/slick-carousel/slick/slick.css";
 import "../../../node_modules/slick-carousel/slick/slick-theme.css";
 
-const Card = lazy(() => import("../../components/Card/index"));
+const Card = lazy(() =>
+    import ("../../components/Card/index"));
 
-const Section = styled.div`
+const Section = styled.div `
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,7 +17,7 @@ const Section = styled.div`
   padding: 5rem 0;
 `;
 
-const Title = styled.h1`
+const Title = styled.h1 `
   color: #0a0b10;
   display: inline-block;
   font-size: calc(1rem + 1.5vw);
@@ -35,7 +36,7 @@ const Title = styled.h1`
   }
 `;
 
-const Carousal = styled.div`
+const Carousal = styled.div `
   width: 50vw;
   display: flex;
   flex-direction: column;
@@ -69,31 +70,34 @@ const Carousal = styled.div`
 `;
 
 const Testimonials = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
+    const settings = {
+        dots: true,
+        infinite: true,
 
-    speed: 1000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
+        speed: 1000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    };
 
-  return (
-    <Section>
-      <Title>Few good words about us!</Title>
-      <Carousal>
-        <Slider {...settings}>
-          <Card
-            text=""
-            name="Adarsh Sharma "
-            image="avatar-2"
-          />
+    return ( <
+        Section >
+        <
+        Title > Few good words about us! < /Title> <
+        Carousal >
+        <
+        Slider {...settings } >
+        <
+        Card text = ""
+        name = "Adarsh Sharma "
+        image = "avatar-2(2)" /
+        >
 
-        
-        </Slider>
-      </Carousal>
-    </Section>
-  );
+
+        <
+        /Slider> <
+        /Carousal> <
+        /Section>
+    );
 };
 
 export default Testimonials;
